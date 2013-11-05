@@ -7,7 +7,7 @@
 
 
   
-    * HTTP NTLM Monitor 1.6 - 7.1, 7.0, 6.0, 5.5, 5.4, 5.3, 5.2
+    * HTTP NTLM Monitor 1.6 - 7.1
   
 
 
