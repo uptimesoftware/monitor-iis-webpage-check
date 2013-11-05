@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc" xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+	<class>IIS Webpage Check</class>
+	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
+	<elements>
+		<element name="process" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>scripts/MonitorHttpNtlm/check_ntlm.bat</default_value>
+			<short_description>Script Name</short_description>
+			<long_description>Name of the script/binary/process to be executed by up.time </long_description>
+			<validation_rule>
+				<alphanumeric/>
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="virtualHost" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value></default_value>
+			<short_description>Virtual Host</short_description>
+			<long_description>If this field is empty, the element host will be used.</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="webpage" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>index.html</default_value>
+			<short_description>Webpage to load</short_description>
+			<long_description>Which webpage do you want to load</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="webport" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>80</default_value>
+			<short_description>Port webpage is on</short_description>
+			<long_description>Which port to use</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+	        <element name="utdomain" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>FWNT</default_value>
+			<short_description>Domain</short_description>
+			<long_description>Windows domain for user</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="utuser" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value/>
+			<short_description>Username</short_description>
+			<long_description>Username to use</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="utpassword" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value/>
+			<short_description>Password</short_description>
+			<long_description>Password to use</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<password/>
+			</gui_type>
+		</element>
+		<element name='NTLM_SSL' parameter_type='input' data_type='string' gui_basic='1' range_type='0' units=''>
+		<control_options>size:8</control_options>
+			<default_value></default_value>
+			<validation_rule/><error_message/>
+			<short_description>Use SSL (HTTPS)</short_description>
+			<long_description>Use SSL (HTTPS)</long_description>
+			<gui_type><boolean/></gui_type>
+		</element>
+		<element name="output" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description> Output </short_description>
+			<long_description> Output of the process after execution </long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0" range_type="0" units="ms">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Response time</short_description>
+			<long_description>Response time in ms</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+	</elements>
+	<help>The second parameter passed to the script/binary is always the name of the assigned hostname.</help>
+</uptime>

@@ -1,0 +1,5 @@
+C:\Users\plui\Documents\SVN\HTTP NTLM Monitor\src\NTLMMonitor\NTLMMonitor\bin\Debug\NTLMMonitor.exe
+C:\Users\plui\Documents\SVN\HTTP NTLM Monitor\src\NTLMMonitor\NTLMMonitor\bin\Debug\NTLMMonitor.pdb
+C:\Users\plui\Documents\SVN\HTTP NTLM Monitor\src\NTLMMonitor\NTLMMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\plui\Documents\SVN\HTTP NTLM Monitor\src\NTLMMonitor\NTLMMonitor\obj\Debug\NTLMMonitor.exe
+C:\Users\plui\Documents\SVN\HTTP NTLM Monitor\src\NTLMMonitor\NTLMMonitor\obj\Debug\NTLMMonitor.pdb

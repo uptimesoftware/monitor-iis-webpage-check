@@ -1,6 +1,8 @@
-name=SNMP Generic
-version=1.0
-platforms=windows linux
-description=Monitor SNMP data by doing snmpget or snmpwalk
+name=HTTP NTLM Monitor
+version=1.6
+platforms=windows
+description=Monitor and login to websites with Windows authentication (NTLM), such as SharePoint & Exchange.
 requiresAgentScript=false
 restartCore=false
+onUpgradeRemoveFiles=true
+onUpgradeRemoveMonitors=false
