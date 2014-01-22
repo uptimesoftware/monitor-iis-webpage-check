@@ -49,6 +49,9 @@ if ($returnCode == 200) {
 	exec($curl_command, $output200, $returnCode);
 	foreach($output200 as $line) {
 		$allOutput = $allOutput ." ". $line;
+		if (strlen($allOutput) > 65000) {	// PLUG-73
+			break;
+		}
 	}
 	$allOutput = substr($allOutput,0,65000);
 	echo "output $allOutput";
