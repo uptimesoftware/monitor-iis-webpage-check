@@ -50,6 +50,7 @@ if ($returnCode == 200) {
 	foreach($output200 as $line) {
 		$allOutput = $allOutput ." ". $line;
 	}
+	$allOutput = substr($allOutput,0,65000);
 	echo "output $allOutput";
 	exit(0);
 } else {
