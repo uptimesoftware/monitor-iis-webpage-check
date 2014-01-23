@@ -1,5 +1,5 @@
 name=HTTP NTLM Monitor
-version=1.6
+version=1.7
 platforms=windows
 description=Monitor and login to websites with Windows authentication (NTLM), such as SharePoint & Exchange.
 requiresAgentScript=false
