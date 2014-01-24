@@ -1,25 +1,43 @@
-# HTTP NTLM Monitor
-## Tags : networking   http   plugin   ntlm  
+HTTP NTLM Monitor
+=================
 
-## Category: plugin
+### Tags
+ networking http plugin ntlm sharepoint
 
-##Version Compatibility<br/>Module Name</th><th>up.time Monitoring Station Version</th>
+### Category
 
-
-  
-    * HTTP NTLM Monitor 1.6 - 7.1
-  
+plugin
 
 
-### Description: Monitor and login to websites with Windows authentication (NTLM).
+### Description:
 
-### Supported Monitoring Stations: 7.2, 7.1
-### Supported Agents: None; no agent required
+ Monitor and login to websites with Windows authentication (NTLM)(Ie. Sharepoint).
+
+### Supported Monitoring Stations:
+ 
+ * HTTP NTLM Monitor 1.7 -  7.2, 7.1
+
+### Supported Agents:
+ 
+ None; no agent required
+ 
 ### Installation Notes: <p><a href="https://github.com/uptimesoftware/uptime-plugin-manager">Install using the up.time Plugin Manager</a></p>
 
 ### Dependencies: <p>Note; This will currently only work on a Windows monitoring station.</p>
 
-### Input Variables: * Webpage to load - The webpage that will be monitored. e.g. /index.html* Port webpage is on - The port where IIS is listening on e.g. 443* Domain - The Windows domain which the user belongs to* Username - The user who authenticates against NTLM* Password - Password of the user* Use SSL (HTTPS) - Whether to use SSL or not
-### Output Variables: * Match on text on the page
-### Languages Used: * Shell/Batch* PHP* Java
+### Input Variables:
+ * Webpage to load - The webpage that will be monitored. e.g. /index.html
+ * Port webpage is on - The port where IIS is listening on e.g. 443
+ * Domain - The Windows domain which the user belongs to
+ * Username - The user who authenticates against NTLM
+ * Password - Password of the user
+ * Use SSL (HTTPS) - Whether to use SSL or not
+
+### Output Variables:
+ * Match on text on the page
+
+### Languages Used:
+ * Shell/Batch
+ * PHP
+ * Java
 
