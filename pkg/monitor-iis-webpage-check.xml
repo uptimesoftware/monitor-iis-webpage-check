@@ -124,5 +124,5 @@
 			</gui_type>
 		</element>
 	</elements>
-	<help>Monitor and login to websites with Windows authentication (NTLM), such as SharePoint & Exchange.</help>
+	<help>Monitor and login to websites with Windows authentication (NTLM), such as SharePoint &amp; Exchange.</help>
 </uptime>
