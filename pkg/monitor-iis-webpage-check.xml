@@ -123,6 +123,70 @@
 				<integer/>
 			</gui_type>
 		</element>
+		<group name="http_threshold_result" switch="0">
+      <short_description>Set Threshold</short_description>
+      <long_description>Set Threshold</long_description>
+      <element name="http_threshold_code200" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+         <control_options>size:40</control_options>
+         <default_value>OK</default_value>
+         <short_description>Status for 200: </short_description>
+         <long_description>Set Thresholds? 200, 302, 404, 500</long_description>
+         <validation_rule/>
+         <error_message/>
+         <gui_type>
+            <single_select type="dropdown">
+               <value>OK</value>
+               <value>CRIT</value>
+               <value>WARN</value>
+            </single_select>
+         </gui_type>
+     </element>
+      <element name="http_threshold_code302" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+         <control_options>size:40</control_options>
+         <default_value>OK</default_value>
+         <short_description>Status for 302:</short_description>
+         <long_description>Set Thresholds? 200, 302, 404, 500</long_description>
+         <validation_rule/>
+         <error_message/>
+         <gui_type>
+            <single_select type="dropdown">
+               <value>OK</value>
+               <value>CRIT</value>
+               <value>WARN</value>
+            </single_select>
+         </gui_type>
+     </element>
+      <element name="http_threshold_code404" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+         <control_options>size:40</control_options>
+         <default_value>WARN</default_value>
+         <short_description>Status for 404:</short_description>
+         <long_description>Set Thresholds? 200, 302, 404, 500</long_description>
+         <validation_rule/>
+         <error_message/>
+         <gui_type>
+            <single_select type="dropdown">
+               <value>OK</value>
+               <value>CRIT</value>
+               <value>WARN</value>
+            </single_select>
+         </gui_type>
+     </element>
+      <element name="http_threshold_code500" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+         <control_options>size:40</control_options>
+         <default_value>CRIT</default_value>
+         <short_description>Status for 500:</short_description>
+         <long_description>Set Thresholds? 200, 302, 404, 500</long_description>
+         <validation_rule/>
+         <error_message/>
+         <gui_type>
+            <single_select type="dropdown">
+               <value>OK</value>
+               <value>CRIT</value>
+               <value>WARN</value>
+            </single_select>
+         </gui_type>
+     </element>
+      </group>
 	</elements>
 	<help>Monitor and login to websites with Windows authentication (NTLM), such as SharePoint &amp; Exchange.</help>
 </uptime>
